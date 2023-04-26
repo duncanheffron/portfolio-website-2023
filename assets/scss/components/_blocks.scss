@@ -1,0 +1,206 @@
+/*
+  @file   /components/_blocks.scss
+  @desc   All Blocks related styling should be placed in this file.
+  @ver    1.0
+*/
+
+// BLOCK: EXPERIENCE SLIDER
+@include b(experience-slider) {
+  padding: vw(50px, 25px) calc(50vw - 50%);
+  margin: 0 calc(50% - 50vw);
+  background-image: linear-gradient(180deg, transparent 50%, $light-bg 50%);
+
+  @include e(header) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: vw(65px, 25px);
+
+    .title {
+      font-size: vw(40px, 24px);
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .slider-navigation {
+      position: relative;
+      display: flex;
+      column-gap: vw(20px, 10px);
+
+      .slide-nav {
+        position: relative;
+        display: inline-block;
+        width: vw(50px, 40px);
+        height: vw(50px, 40px);
+        border: 2px solid #fff;
+        @include border-radius(100px);
+        @include animated;
+        overflow: hidden;
+        left: unset;
+        right: unset;
+
+        &:after {
+          content: none;
+        }
+
+        .icon {
+          @include center('both');
+          display: block;
+          width: 25%;
+          height: 25%;
+          border-right: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          transform: translate3d(-65%, -50%, 0) rotate3d(0, 0, 1, -45deg);
+          @include animated;
+        }
+
+        &.prev .icon {
+          transform: translate3d(-35%, -50%, 0) rotate3d(0, 0, 1, 135deg);
+        }
+      }
+    }
+  }
+
+  @include e(slider) {
+
+    .swiper {
+      margin: 0 calc(50% - 50vw);
+      padding: 0 calc(50vw - 50%);
+
+      .swiper-wrapper {
+        padding-bottom: 40px;
+      }
+
+      .swiper-slide {
+        height: auto;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// BLOCK: EXPERIENCE LOOP ITEM
+@include b(experience-loop-item) {
+  height: 100%;
+  color: $dark-text;
+  background-color: #fff;
+  box-shadow: 0 5px 20px 5px rgba(0,0,0, .1);
+  padding: vw(45px, 35px) vw(40px, 30px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+
+  header {
+    margin-bottom: vw(64px, 25px);
+    
+    .company {
+        display: inline-block;
+        color: $base-text;
+        background-color: $primary;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.25em;
+        padding: 0 5px;
+        margin: 0 -5px;
+    }
+  }
+
+  main {
+
+    .title {
+      @include large;
+      font-weight: 700;
+      margin-bottom: .85em;
+    }
+
+    .description {
+      color: $gray-text;
+      font-size: vw(18px, 14px);
+      margin-bottom: vw(65px, 20px);
+    }
+  }
+
+  footer {
+    margin-top: auto;
+
+    .date-range {
+      color: $gray-text;
+      font-family: $support-font;
+      font-size: vw(14px, 12px);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// BLOCK: CONTENT WITH IMAGE
+@include b(content-with-image) {
+  margin: 0 calc(50% - 50vw);
+  padding: vw(150px, 40px) calc(50vw - 50%);
+  display: flex;
+  align-items: center;
+  column-gap: vw(143px, 50px);
+
+  @include e(image) {
+    position: relative;
+    aspect-ratio: 800/580;
+    width: vw(800px, 300px);
+    flex-shrink: 0;
+    box-shadow: vw(-35px) vw(35px) 0 $primary;
+
+    .image-holder {
+      @include abs-cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+
+    @include bp(custom, max, 767px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  @include e(content) {
+
+    .title {
+      font-weight: 900;
+      text-transform: uppercase;
+
+      .text-highlight {
+        display: inline-block;
+        color: $base-text;
+        background-color: $primary;
+        line-height: 1.05em;
+        padding: 0 10px;
+        margin: 0 -10px 5px;
+      }
+    }
+  }
+
+  @include m(light) {
+    color: $dark-text;
+    background: $light-bg;
+  }
+
+  @include m(reversed) {
+    flex-direction: row-reverse;
+
+    @include e(image) {
+      box-shadow: vw(35px) vw(35px) 0 $primary;
+    }
+  }
+
+  @include bp(custom, max, 1279px) {
+    align-items: flex-start;
+  }
+
+  @include bp(custom, max, 767px) {
+    display: block;
+  }
+}

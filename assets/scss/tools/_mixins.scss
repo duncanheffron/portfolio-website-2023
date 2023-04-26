@@ -1,0 +1,141 @@
+/*
+  @file   /tools/_mixins.scss
+  @desc   All SASS mixins should be placed in this file.
+  @ver    1.0
+*/
+
+@use "sass:math";
+
+// Mixin for hover effects (to exclude tablets/phones)
+@mixin hover {
+  @media (min-width: 1025px) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+
+// Mixin for base animation
+@mixin animated( $custom: false ) {
+  @if($custom) {
+    transition: $custom;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  } @else {
+    transition: $default-animation;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+
+// Mixin for staggered animation delays
+@mixin stagger($count, $delay, $type: transition) {
+  @for $i from 1 through $count {
+    &:nth-child(#{$i}) {
+      #{$type}-delay: $delay * $i;
+    }
+  }
+}
+
+
+// Mixin for responsive breakpoints
+@mixin bp($breakpoint, $type: max, $pixels: 768px) {
+  @if map-has-key($breakpoints-min, $breakpoint) {
+    @media screen and (min-width: #{map-get($breakpoints-min, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else if map-has-key($breakpoints-max, $breakpoint) {
+    @media screen and (max-width: #{map-get($breakpoints-max, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == 'custom' {
+    @media screen and ($type + -width: $pixels) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn 'This breakpoint was not found: "#{$breakpoint}"';
+  }
+}
+
+
+// Mixin for standard shadows
+@mixin shadow($type: 'custom', $size: 10px, $color: rgba(0,0,0,0.1)) {
+  @if $type == 'small' {
+    box-shadow: 0 0 10px $color;
+  }
+
+  @else if $type == 'medium' {
+    box-shadow: 0 0 25px $color;
+  }
+
+  @else if $type == 'large' {
+    box-shadow: 0 0 50px $color;
+  }
+
+  @else {
+    box-shadow: 0 0 $size $color;
+  }
+}
+
+
+// Mixin for border radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border */
+}
+
+
+// Mixin for horizontal and/or vertical centering of elements
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $position == 'horizontal' {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+// Mixin for responsive ratio
+@mixin responsive-ratio($x, $y, $position: relative, $pseudo: true) {
+  position: $position;
+  $padding: math.div($y, $x) * 100%;
+
+  @if $pseudo {
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-bottom: $padding;
+    }
+  } @else {
+    padding-bottom: $padding;
+  }
+}
+
+
+// Mixin for 100% width/height absolute position
+@mixin abs-cover() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

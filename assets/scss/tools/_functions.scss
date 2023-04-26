@@ -1,0 +1,30 @@
+/*
+  @file   /tools/_functions.scss
+  @desc   All SASS functions should be placed in this file.
+  @ver    1.0
+*/
+
+@use "sass:math";
+
+// Helper function to strip unit
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+// Convert pixel to view-width values
+@function vw($px, $min: false, $base: 1920) {
+  $px: strip-unit($px);
+  $base: strip-unit($base);
+  $size: math.div($px, $base) * 100vw;
+
+  @if($min) {
+    @return clamp($min, $size, 9999px);
+  } @else {
+    @return $size;
+  }
+}

@@ -1,0 +1,67 @@
+<template>
+  
+  <div class="header-homepage">
+
+    <div class="header-homepage__image-carousel">
+      <div class="scrolling-image-carousel">
+        <div class="inner-wrapper">
+          <div class="column">
+            <img src="https://picsum.photos/750" alt="alt">
+            <img src="https://picsum.photos/740" alt="alt">
+            <img src="https://picsum.photos/730" alt="alt">
+            <img src="https://picsum.photos/760" alt="alt">
+            <img src="https://picsum.photos/750" alt="alt">
+            <img src="https://picsum.photos/740" alt="alt">
+            <img src="https://picsum.photos/730" alt="alt">
+            <img src="https://picsum.photos/760" alt="alt">
+          </div>
+          <div class="column">
+            <img src="https://picsum.photos/950" alt="alt">
+            <img src="https://picsum.photos/940" alt="alt">
+            <img src="https://picsum.photos/930" alt="alt">
+            <img src="https://picsum.photos/960" alt="alt">
+            <img src="https://picsum.photos/950" alt="alt">
+            <img src="https://picsum.photos/940" alt="alt">
+            <img src="https://picsum.photos/930" alt="alt">
+            <img src="https://picsum.photos/960" alt="alt">
+          </div>
+          <div class="column">
+            <img src="https://picsum.photos/650" alt="alt">
+            <img src="https://picsum.photos/640" alt="alt">
+            <img src="https://picsum.photos/630" alt="alt">
+            <img src="https://picsum.photos/660" alt="alt">
+            <img src="https://picsum.photos/650" alt="alt">
+            <img src="https://picsum.photos/640" alt="alt">
+            <img src="https://picsum.photos/630" alt="alt">
+            <img src="https://picsum.photos/660" alt="alt">
+          </div>
+          <div class="column">
+            <img src="https://picsum.photos/850" alt="alt">
+            <img src="https://picsum.photos/840" alt="alt">
+            <img src="https://picsum.photos/830" alt="alt">
+            <img src="https://picsum.photos/860" alt="alt">
+            <img src="https://picsum.photos/850" alt="alt">
+            <img src="https://picsum.photos/840" alt="alt">
+            <img src="https://picsum.photos/830" alt="alt">
+            <img src="https://picsum.photos/860" alt="alt">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-homepage__content">
+      <div class="inner-container">
+
+        <h1>I'm <span>Duncan</span></h1>
+        <p>A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending.</p>
+
+        <div class="scroll-down">
+          <a href="#" class="btn"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</template>

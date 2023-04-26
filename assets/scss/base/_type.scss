@@ -1,0 +1,54 @@
+/*
+  @file   /base/_type.scss
+  @desc   All typography related styling should be placed in this file.
+  @ver    1.0
+*/
+
+// Standard paragraph styling
+p {
+  line-height: 2em;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+span {
+  font-weight: inherit;
+}
+
+// Standard heading (and like heading) settings
+%heading-base {
+  font-weight: 600;
+  margin: 0 0 0.25em 0;
+  line-height: 1em;
+}
+
+// Standard font sizes & settings for every heading (and 'like-h' classes)
+h1, .like-h1 {
+  @extend %heading-base;
+  @include h1;
+}
+
+h2, .like-h2 {
+  @extend %heading-base;
+  @include h2;
+}
+
+h3, .like-h3 {
+  @extend %heading-base;
+  @include h3;
+}
+
+h4, .like-h4 {
+  @extend %heading-base;
+  @include h4;
+}
+
+// Standard (ordered/unordered) list styling
+ul, ol {
+  margin: 0 0 15px 20px;
+  padding: 0;
+
+  li {
+    line-height: 1.6em;
+  }
+}

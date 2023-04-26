@@ -1,0 +1,134 @@
+/*
+  @file   /components/_header.scss
+  @desc   All header related styling should be placed in this file.
+  @ver    1.0
+*/
+
+// BLOCK: HEADER HOMEPAGE
+@include b(header-homepage) {
+  position: relative;
+  height: 100dvh;
+  
+  @include e(image-carousel) {
+    @include abs-cover;
+    height: 140%;
+
+    .scrolling-image-carousel {
+      position: absolute;
+      top: 0; 
+      right: 0;
+      bottom: 0;
+      width: vw(1633px);
+      height: 100%;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        @include abs-cover;
+        background-image: 
+          linear-gradient(105deg, #000 25%, transparent 75%), 
+          linear-gradient(0deg, #000 0%, transparent 35%);
+
+        @include bp(custom, max, 767px) {
+          background-image: 
+            linear-gradient(105deg, #000 5%, transparent 50%), 
+            linear-gradient(0deg, #000 35%, transparent 85%);
+        }
+      }
+
+      .inner-wrapper {
+        width: 90%;
+        left: 20%;
+        transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 15deg);
+
+        @include bp(custom, max, 1279px) {
+          width: 120%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 15deg);
+        }
+      }
+
+      @include bp(custom, max, 1279px) {
+        width: 100%;
+      }
+    }
+
+    @include bp(custom, max, 1279px) {
+      height: 100%;
+    }
+  }
+
+  @include e(content) {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+
+    h1 {
+      font-size: vw(150px, 60px);
+      font-weight: 900;
+      line-height: 1em;
+      text-transform: uppercase;
+      width: vw(632px, 300px);
+
+      span {
+        display: inline-block;
+        background-color: $primary;
+        padding: 0 10px;
+        margin: -10px;
+      }
+
+      @include bp(custom, max, 767px) {
+        width: 100%;
+      }
+    }
+
+    p {
+      width: vw(520px, 300px);
+
+      @include bp(custom, max, 767px) {
+        width: 100%;
+      }
+    }
+
+    .scroll-down {
+      margin-top: vw(130px, 50px);
+
+      a {
+        position: relative;
+        display: block;
+        width: vw(50px, 40px);
+        height: vw(50px, 40px);
+        border: 2px solid #fff;
+        @include border-radius(100px);
+        @include animated;
+        overflow: hidden;
+
+        span {
+          @include center('both');
+          display: block;
+          width: 25%;
+          height: 25%;
+          border-right: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);
+          @include animated;
+        }
+
+        @include hover {
+          background-color: #fff;
+          
+          span {
+            border-right-color: #000;
+            border-bottom-color: #000;
+            animation: arrowScrollButton .85s ease-in-out forwards;
+          }
+        }
+      }
+    }
+
+    @include bp(custom, max, 767px) {
+      align-items: flex-end;
+      padding: 0 30px 60px;
+    }
+  }
+}

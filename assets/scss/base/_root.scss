@@ -1,0 +1,48 @@
+/*
+  @file   /base/_root.scss
+  @desc   All root HTML related styling should be placed in this file.
+  @ver    1.0
+*/
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: $base-font;
+  @include base;
+  background: #000;
+  color: $base-text;
+}
+
+// Max-width 100% for images
+img, svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// Define an inner container to use throughout the theme
+.inner-container {
+  width: $container-desktop;
+  margin: 0 auto;
+  position: relative;
+
+  @include bp('tablet-landscape') {
+    width: $container-tablet;
+  }
+
+  @include bp('phones-large') {
+    width: $container-phone;
+  }
+}

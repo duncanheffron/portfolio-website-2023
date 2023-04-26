@@ -1,0 +1,101 @@
+/*
+  @file   /settings/_vars.scss
+  @desc   All SCSS variables should be placed in this file.
+  @ver    1.0
+*/
+
+// Base fonts
+$base-font: 'Gilroy', sans-serif;
+$support-font: 'Open Sans', sans-serif;
+
+@mixin base-font {
+  font-family: $base-font;
+}
+
+// Base font sizes (based on 1920px)
+$text-base: 20px;
+$text-base-min: 15px;
+$text-small: 16px;
+$text-small-min: 14px;
+$text-large: 25px;
+$text-large-min: 18px;
+$text-intro: 40px;
+$text-intro-min: 20px;
+
+@mixin base {
+  font-size: vw($text-base, $text-base-min);
+}
+
+@mixin small {
+  font-size: vw($text-small, $text-small-min);
+}
+
+@mixin large {
+  font-size: vw($text-large, $text-large-min);
+}
+
+@mixin intro {
+  font-size: vw($text-intro, $text-intro-min);
+}
+
+// Heading base sizes (based on 1920px)
+$h1-base: 80px;
+$h1-min: 40px;
+$h2-base: 60px;
+$h2-min: 30px;
+$h3-base: 40px;
+$h3-min: 22px;
+$h4-base: 20px;
+$h4-min: 17px;
+
+@mixin h1 {
+  font-size: vw($h1-base, $h1-min);
+}
+
+@mixin h2 {
+  font-size: vw($h2-base, $h2-min);
+}
+
+@mixin h3 {
+  font-size: vw($h3-base, $h3-min);
+}
+
+@mixin h4 {
+  font-size: vw($h4-base, $h4-min);
+}
+
+// Standard animation
+$default-animation: 0.35s ease-in-out all;
+
+// WAUW inner container size
+$container-desktop: 85%;
+$container-tablet: 87.5%;
+$container-phone: 90%;
+
+// Breakpoints for min-width
+$breakpoints-min: (
+  'desktop-large': 1500px,
+  'desktop-huge': 1920px,
+  'desktop-ultra': 2500px,
+);
+
+// Breakpoints for max-width
+$breakpoints-max: (
+  'phones-tiny': 360px,
+  'phones-normal': 375px,
+  'phones-large': 600px,
+  'tablet-portrait': 768px,
+  'tablet-landscape': 1024px,
+  'desktop-small': 1280px
+);
+
+// BEM variables
+$bem-element-seperator: '__';
+$bem-modifier-seperator: '--';
+
+// Base color variables
+$base-text: #fff;
+$dark-text: #000;
+$gray-text: #515151;
+$primary: #E50B14;
+$light-bg: #f7f7f7;

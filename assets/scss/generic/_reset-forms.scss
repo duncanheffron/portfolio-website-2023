@@ -1,0 +1,29 @@
+/*
+  @file   /generic/_reset-forms.scss
+  @desc   All form reset styling should be placed in this file.
+  @ver    1.0
+*/
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button,
+::-webkit-search-cancel-button,
+[type="search"] {
+  appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

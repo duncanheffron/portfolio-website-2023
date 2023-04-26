@@ -1,0 +1,32 @@
+/*
+  @file   style.scss
+  @desc   This is the main SCSS file, containing all the imports of the ITCSS theme structure.
+          (More information: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture)
+  @ver    1.0
+*/
+
+// SETTINGS - always include variables, functions and mixins first, for use in other components
+@import 'settings/vars';
+@import 'tools/functions';
+@import 'tools/mixins';
+
+// GENERIC - import generic styling & resets, such as normalize
+@import 'generic/normalize';
+@import 'generic/reset';
+@import 'generic/reset-forms';
+
+// BASE - import base styling for theme
+@import 'base/bem';
+@import 'base/root';
+@import 'base/type';
+
+// COMPONENTS - import all theme components
+@import 'components/animation';
+@import 'components/image-carousel';
+// @import 'components/buttons';
+// @import 'components/nav';
+@import 'components/header';
+// @import 'components/footer';
+// @import 'components/pages';
+// @import 'components/forms';
+@import 'components/blocks';

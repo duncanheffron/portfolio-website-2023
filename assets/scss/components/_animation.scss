@@ -1,0 +1,49 @@
+/*
+  @file   /components/_animation.scss
+  @desc   All animation related styling should be placed in this file.
+  @ver    1.0
+*/
+
+// Let's always animated anchor tags (as they contain actions)
+a, button {
+  @include animated;
+}
+
+@keyframes scrollToTop {
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes scrollToBottom {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes arrowScrollButton {
+  0% {
+    transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translate3d(-50%, 200%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(-50%, 200%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+  61% {
+    transform: translate3d(-50%, -400%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+  62% {
+    transform: translate3d(-50%, -400%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);
+    opacity: 1;
+  }
+}

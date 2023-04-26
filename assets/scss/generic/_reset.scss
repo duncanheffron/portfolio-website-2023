@@ -1,0 +1,54 @@
+/*
+  @file   /generic/_reset.scss
+  @desc   All global reset styling should be placed in this file.
+  @ver    1.0
+*/
+
+// Global box-sizing to border-box
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1;
+}
+
+// Changing the styling of selected text
+::selection {
+  background: $primary;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: $primary;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: #fff;
+  text-shadow: none;
+}
+
+// Standard vertical alignment of images
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Standard border-collapse and border-spacing for tables
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
