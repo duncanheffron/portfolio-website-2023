@@ -52,8 +52,8 @@
     <div class="header-homepage__content">
       <div class="inner-container">
 
-        <h1>I'm <span>Duncan</span></h1>
-        <p>A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending.</p>
+        <h1 v-html="props.title"></h1>
+        <p>{{ props.introduction }}</p>
 
         <div class="scroll-down">
           <a href="#" class="btn"><span></span></a>
@@ -65,3 +65,7 @@
   </div>
 
 </template>
+
+<script setup>
+const { props } = defineProps(['props']);
+</script>

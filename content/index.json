@@ -1,5 +1,222 @@
 {
-  "title": "Hello Content v2!",
-  "description": "The writing experience for Nuxt 3",
-  "category": "announcement"
+  "header": {
+    "title": "I'm <span>Duncan</span>",
+    "introduction": "A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending."
+  },
+  "blocks": [
+    {
+      "componentName": "ExperienceSlider",
+      "props": {
+        "Experiences": [
+          {
+            "company": "Wauw Agency",
+            "title": "Frontend Developer",
+            "description": "Here I work on a diversity of Wordpress websites, build with custom and pre build plug-ins to server our needs. All websites where hand build from a skeleton theme developed in house.",
+            "start_date": "2021-02-01",
+            "end_date": null
+          },
+          {
+            "company": "De Boterlap",
+            "title": "Bartender",
+            "description": "On Saturday nights, I work as a bartender at De Boterlap in Harderwijk. I took up this job to meet more people after moving to this new city, and also because I enjoy working with a diverse group of individuals.",
+            "start_date": "2022-09-01",
+            "end_date": null
+          },
+          {
+            "company": "Merkmeester",
+            "title": "Frontend Developer",
+            "description": "Here I worked on diverse Wordpress websites, build with custom and pre build plug-ins to server our needs. All websites where hand build from a skeleton theme developed in house.",
+            "start_date": "2021-02-01",
+            "end_date": "2022-01-01"
+          },
+          {
+            "company": "ShareValue",
+            "title": "Frontend Developer",
+            "description": "At ShareValue, I work as a front-end developer on a secondment basis. Additionally, I also worked with the internal web team to bring the website up to the new standard.",
+            "start_date": "2020-02-01",
+            "end_date": "2022-01-01"
+          },
+          {
+            "company": "Jobs & Media Group",
+            "title": "Frontend Developer",
+            "description": "At ShareValue, I work as a front-end developer on a secondment basis. Additionally, I also worked with the internal web team to bring the website up to the new standard.",
+            "start_date": "2019-09-01",
+            "end_date": "2020-01-01"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "https://picsum.photos/1250/800",
+          "alt": "Just an example image"
+        },
+        "buttons": [
+          {
+            "class": "main-btn",
+            "title": "More about this trip",
+            "url": "#"
+          },
+          {
+            "class": "clear-btn",
+            "title": "Other trips",
+            "url": "#"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockAboutMe",
+      "props": {
+        "title": "<span class=\"text-highlight\">About me</span>",
+        "body": "<p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>",
+        "skills": [
+          {
+            "name": "HTML5",
+            "level": 2
+          },
+          {
+            "name": "CSS3",
+            "level": 2
+          },
+          {
+            "name": "Nuxt 3",
+            "level": 0
+          },
+          {
+            "name": "SCSS",
+            "level": 3
+          },
+          {
+            "name": "PHP",
+            "level": 1
+          },
+          {
+            "name": "GraphQL",
+            "level": 0
+          },
+          {
+            "name": "javascript",
+            "level": 1
+          },
+          {
+            "name": "vagrant",
+            "level": 1
+          },
+          {
+            "name": "nodeJS",
+            "level": 0
+          },
+          {
+            "name": "TrueNAS",
+            "level": 0
+          },
+          {
+            "name": "Figma",
+            "level": 1
+          },
+          {
+            "name": "Expression engine",
+            "level": 1
+          },
+          {
+            "name": "Illustrator",
+            "level": 2
+          },
+          {
+            "name": "Photoshop",
+            "level": 1
+          },
+          {
+            "name": "Flutter",
+            "level": 0
+          },
+          {
+            "name": "Dart",
+            "level": 0
+          },
+          {
+            "name": "Hospitality",
+            "level": 1
+          },
+          {
+            "name": "Adobe Xd",
+            "level": 1
+          },
+          {
+            "name": "Sketch",
+            "level": 2
+          },
+          {
+            "name": "App design",
+            "level": 1
+          },
+          {
+            "name": "UI / UX",
+            "level": 1
+          },
+          {
+            "name": "Scrum",
+            "level": 1
+          },
+          {
+            "name": "Laravel",
+            "level": 0
+          },
+          {
+            "name": "Angular",
+            "level": 1
+          },
+          {
+            "name": "Firebase",
+            "level": 0
+          },
+          {
+            "name": "WordPress",
+            "level": 2
+          },
+          {
+            "name": "Typescript",
+            "level": 0
+          },
+          {
+            "name": "Baker",
+            "level": 0
+          },
+          {
+            "name": "Cook",
+            "level": 1
+          },
+          {
+            "name": "Bartender",
+            "level": 1
+          },
+          {
+            "name": "ACF",
+            "level": 1
+          },
+          {
+            "name": "GSAP",
+            "level": 1
+          },
+          {
+            "name": "Bootstrap",
+            "level": 1
+          },
+          {
+            "name": "React",
+            "level": 0
+          },
+          {
+            "name": "Webdesign",
+            "level": 2
+          }
+        ]
+      }
+    }
+  ]
 }

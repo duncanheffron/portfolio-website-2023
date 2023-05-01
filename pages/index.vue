@@ -1,19 +1,29 @@
-
-import ContentWithImage from '~/Components/ContentWithImage.vue';
-
 <template>
   <div>
-    <HeaderHomepage />
-    <ExperienceSlider />
-    <ContentWithImage :content="contentBlock" />
+    <HeaderHomepage :props="content.header" />
+
+    <div v-for="(item, index) in content.blocks" :key="index">
+      <component :is="item.componentName" :props="item.props"></component>
+    </div>
   </div>
 </template>
 
-<script setup>
-const contentBlock = {
-  'title': '<span class="text-highlight">Disneyland</span><br> Paris 2023',
-  'body': 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.',
-  'image': 'https://picsum.photos/1250/800',
-  'image_alt': 'Example image'
+<script>
+import ExperienceSlider from '@/components/Experience/Slider.vue';
+import BlockContentWithImage from '@/components/Block/ContentWithImage.vue';
+import BlockAboutMe from '@/components/Block/AboutMe.vue';
+import pageContent from '~/content/index.json'
+
+export default {
+  data() {
+    return {
+      content: pageContent
+    }
+  },
+  components: {
+    ExperienceSlider,
+    BlockContentWithImage,
+    BlockAboutMe
+  }
 }
 </script>

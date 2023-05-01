@@ -39,7 +39,7 @@
             }
           }"
           >
-          <SwiperSlide v-for="(item, index) in items" :key="index">
+          <SwiperSlide v-for="(item, index) in props.Experiences" :key="index">
             <ExperienceLoopItem :experience="item" />
           </SwiperSlide>
         </Swiper>
@@ -50,41 +50,5 @@
 </template>
 
 <script setup>
-  const items = [
-    {
-      'company': 'Wauw Agency',
-      'title': 'Frontend Developer',
-      'description': 'Here I work on a diversity of Wordpress websites, build with custom and pre build plug-ins to server our needs. All websites where hand build from a skeleton theme developed in house.',
-      'start_date': '2021-02-01',
-      'end_date': null,
-    },
-    {
-      'company': 'De Boterlap',
-      'title': 'Bartender',
-      'description': 'On Saturday nights, I work as a bartender at De Boterlap in Harderwijk. I took up this job to meet more people after moving to this new city, and also because I enjoy working with a diverse group of individuals.',
-      'start_date': '2022-09-01',
-      'end_date': null,
-    },
-    {
-      'company': 'Merkmeester',
-      'title': 'Frontend Developer',
-      'description': 'Here I worked on diverse Wordpress websites, build with custom and pre build plug-ins to server our needs. All websites where hand build from a skeleton theme developed in house.',
-      'start_date': '2021-02-01',
-      'end_date': '2022-01-01',
-    },
-    {
-      'company': 'ShareValue',
-      'title': 'Frontend Developer',
-      'description': 'At ShareValue, I work as a front-end developer on a secondment basis. Additionally, I also worked with the internal web team to bring the website up to the new standard.',
-      'start_date': '2020-02-01',
-      'end_date': '2022-01-01',
-    },
-    {
-      'company': 'Jobs & Media Group',
-      'title': 'Frontend Developer',
-      'description': 'At ShareValue, I work as a front-end developer on a secondment basis. Additionally, I also worked with the internal web team to bring the website up to the new standard.',
-      'start_date': '2019-09-01',
-      'end_date': '2020-01-01',
-    }
-  ]
+const { props } = defineProps(['props']);
 </script>

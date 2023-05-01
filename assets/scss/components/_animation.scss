@@ -21,6 +21,18 @@ a, button {
   }
 }
 
+@keyframes scrollToLeft {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes scrollToRight {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes arrowScrollButton {
   0% {
     transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);

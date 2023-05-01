@@ -171,6 +171,7 @@
     .title {
       font-weight: 900;
       text-transform: uppercase;
+      margin-bottom: vw(30px, 20px);
 
       .text-highlight {
         display: inline-block;
@@ -180,6 +181,20 @@
         padding: 0 10px;
         margin: 0 -10px 5px;
       }
+    }
+
+    .body {
+      margin-bottom: vw(45px, 25px);
+
+      p {
+        color: $gray-text;
+        opacity: .8;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: vw(30px, 20px);
     }
   }
 
@@ -202,5 +217,179 @@
 
   @include bp(custom, max, 767px) {
     display: block;
+  }
+}
+
+// BLOCK: ABOUT ME
+@include b(about-me) {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  column-gap: vw(120px, 50px);
+  margin: 0 calc(50% - 50vw);
+  padding: vw(150px, 50px) calc(50vw - 50%) vw(150px, 50px) 0;
+
+  @include e(content) {
+
+    .title {
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: vw(30px, 20px);
+
+      .text-highlight {
+        display: inline-block;
+        color: $base-text;
+        background-color: $primary;
+        line-height: 1.05em;
+        padding: 0 10px;
+        margin: 0 -10px 5px;
+      }
+    }
+
+    .body {
+      margin-bottom: vw(60px, 20px);
+
+      p {
+        opacity: .8;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .skill-levels {
+
+      .levels-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        column-gap: vw(25px, 15px);
+
+        .level-item {
+          display: inline-flex;
+          align-items: center;
+          color: rgba($base-text, .8);
+
+          span {
+            display: inline-block;
+            width: .5em;
+            height: .5em;
+            background: $base-text;
+            margin-right: .5em;
+            @include border-radius(100%);
+          }
+
+          &.level-item--beginner span {
+            background: #DE454B;
+          }
+
+          &.level-item--intermediate span {
+            background: #3F68DA;
+          }
+
+          &.level-item--proficient span {
+            background: #78E855;
+          }
+
+          &.level-item--expert span {
+            background: #B43FDA;
+          }
+        }
+      }
+    }
+  }
+
+  @include e(skills) {
+    width: vw(1030px, 400px);
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      @include abs-cover;
+      background-image: linear-gradient(to right, $dark-bg 0%, transparent 10%, transparent 60%, $dark-bg 100%);
+    }
+
+    .skill-row {
+      display: flex;
+      gap: vw(20px, 10px);
+      margin-bottom: vw(20px, 10px);
+      --animation-speed: 60s;
+
+      &:nth-child(odd) {
+        animation: scrollToLeft linear var(--animation-speed) infinite;
+      }
+
+      &:nth-child(even) {
+        transform: translate3d(-50%, 0, 0);
+        animation: scrollToRight linear var(--animation-speed) infinite;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// BLOCK: SKILL LOOP ITEM
+@include b(skill-loop-item) {
+  aspect-ratio: 200/90;
+  height: 90px;
+  padding: vw(20px, 10px) vw(25px, 15px);
+  background: #0E0E0E;
+  border: 3px solid #161616;
+  flex-shrink: 0;
+  @include border-radius(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    line-height: 1.22222222em;
+    margin-bottom: 0;
+
+    &.level {
+      display: inline-flex;
+      align-items: center;
+      color: $gray-text;
+
+      span {
+        display: inline-block;
+        width: .5em;
+        height: .5em;
+        background: $base-text;
+        margin-right: .5em;
+        @include border-radius(100%);
+      }
+
+      &.level--beginner span {
+        background: #DE454B;
+      }
+
+      &.level--intermediate span {
+        background: #3F68DA;
+      }
+
+      &.level--proficient span {
+        background: #78E855;
+      }
+
+      &.level--expert span {
+        background: #B43FDA;
+      }
+    }
+
+    &.name {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
   }
 }

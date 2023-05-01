@@ -26,13 +26,13 @@
         content: '';
         @include abs-cover;
         background-image: 
-          linear-gradient(105deg, #000 25%, transparent 75%), 
-          linear-gradient(0deg, #000 0%, transparent 35%);
+          linear-gradient(105deg, $dark-bg 25%, transparent 75%), 
+          linear-gradient(0deg, $dark-bg 0%, transparent 35%);
 
         @include bp(custom, max, 767px) {
           background-image: 
-            linear-gradient(105deg, #000 5%, transparent 50%), 
-            linear-gradient(0deg, #000 35%, transparent 85%);
+            linear-gradient(105deg, $dark-bg 5%, transparent 50%), 
+            linear-gradient(0deg, $dark-bg 35%, transparent 85%);
         }
       }
 
@@ -118,8 +118,8 @@
           background-color: #fff;
           
           span {
-            border-right-color: #000;
-            border-bottom-color: #000;
+            border-right-color: $dark-bg;
+            border-bottom-color: $dark-bg;
             animation: arrowScrollButton .85s ease-in-out forwards;
           }
         }

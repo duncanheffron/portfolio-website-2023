@@ -4,18 +4,17 @@
 
       <div class="content-with-image__image">
         <div class="image-holder">
-          <img :src="content.image" :alt="content.image_alt">
+          <img :src="props.image.url" :alt="props.image.alt">
         </div>
       </div>
 
       <div class="content-with-image__content">
-        <h2 class="like-h1 title" v-html="content.title"></h2>
+        <h2 class="like-h1 title" v-html="props.title"></h2>
         <div class="body">
-          <p>{{ content.body }}</p>
+          <p>{{ props.body }}</p>
         </div>
         <div class="buttons">
-          <a href="#" class="main-btn">More about this trip</a>
-          <a href="#" class="clear-btn">Other trips</a>
+          <NuxtLink v-for="(button, index) in props.buttons" :key="index" :to="button.url" :class="button.class">{{ button.title }}</NuxtLink>
         </div>
       </div>
 
@@ -24,5 +23,5 @@
 </template>
 
 <script setup>
-const { content } = defineProps(['content']);
+const { props } = defineProps(['props']);
 </script>
