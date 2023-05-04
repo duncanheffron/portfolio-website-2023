@@ -29,8 +29,10 @@
 
       <div class="about-me__skills">
         <div class="skill-row" v-for="(row, index) in splitSkills" :key="index">
-          <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex" :skill="skill" />
-          <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex + 7" :skill="skill" />
+          <div class="inner-wrapper">
+            <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex" :skill="skill" />
+            <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex + 7" :skill="skill" />
+          </div>
         </div>
       </div>
     </div>

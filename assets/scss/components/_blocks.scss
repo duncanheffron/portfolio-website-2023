@@ -77,6 +77,10 @@
       }
     }
   }
+
+  @include bp(custom, max, 767px) {
+    padding: vw(50px, 25px) calc(50vw - 50%) 0;
+  }
 }
 
 // BLOCK: EXPERIENCE LOOP ITEM
@@ -84,7 +88,7 @@
   height: 100%;
   color: $dark-text;
   background-color: #fff;
-  box-shadow: 0 5px 20px 5px rgba(0,0,0, .1);
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, .1);
   padding: vw(45px, 35px) vw(40px, 30px);
   display: flex;
   flex-direction: column;
@@ -93,16 +97,17 @@
 
   header {
     margin-bottom: vw(64px, 25px);
-    
+
     .company {
-        display: inline-block;
-        color: $base-text;
-        background-color: $primary;
-        font-weight: 900;
-        text-transform: uppercase;
-        line-height: 1.25em;
-        padding: 0 5px;
-        margin: 0 -5px;
+      @include base-font;
+      display: inline-block;
+      color: $base-text;
+      background-color: $primary;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.25em;
+      padding: 0 5px;
+      margin: 0 -5px;
     }
   }
 
@@ -137,7 +142,7 @@
 // BLOCK: CONTENT WITH IMAGE
 @include b(content-with-image) {
   margin: 0 calc(50% - 50vw);
-  padding: vw(150px, 40px) calc(50vw - 50%);
+  padding: vw(150px, 50px) calc(50vw - 50%);
   display: flex;
   align-items: center;
   column-gap: vw(143px, 50px);
@@ -162,7 +167,7 @@
 
     @include bp(custom, max, 767px) {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: vw(120px, 50px);
     }
   }
 
@@ -180,6 +185,10 @@
         line-height: 1.05em;
         padding: 0 10px;
         margin: 0 -10px 5px;
+
+        @include bp(custom, max, 767px) {
+          margin: 0 0 5px;
+        }
       }
     }
 
@@ -187,20 +196,36 @@
       margin-bottom: vw(45px, 25px);
 
       p {
-        color: $gray-text;
+        color: $base-text;
         opacity: .8;
       }
     }
 
     .buttons {
       display: flex;
-      gap: vw(30px, 20px);
+      gap: vw(20px, 10px) vw(30px, 20px);
+
+      @include bp(custom, max, 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @include bp(custom, max, 767px) {
+      padding: 0 20px;
     }
   }
 
   @include m(light) {
     color: $dark-text;
     background: $light-bg;
+
+    @include e(content) {
+
+      .body p {
+        color: $gray-text;
+      }
+    }
   }
 
   @include m(reversed) {
@@ -243,6 +268,10 @@
         line-height: 1.05em;
         padding: 0 10px;
         margin: 0 -10px 5px;
+
+        @include bp(custom, max, 767px) {
+          margin: 0 0 5px;
+        }
       }
     }
 
@@ -265,9 +294,11 @@
         padding: 0;
         margin: 0;
         display: flex;
-        column-gap: vw(25px, 15px);
+        flex-wrap: wrap;
+        gap: vw(10px, 5px) vw(25px, 15px);
 
         .level-item {
+          @include support-font;
           display: inline-flex;
           align-items: center;
           color: rgba($base-text, .8);
@@ -296,8 +327,17 @@
           &.level-item--expert span {
             background: #B43FDA;
           }
+
+          @include bp(custom, max, 767px) {
+            flex-basis: 45%;
+          }
         }
       }
+    }
+
+    @include bp(custom, max, 767px) {
+      padding: 0 20px;
+      margin-bottom: vw(120px, 50px);
     }
   }
 
@@ -311,34 +351,58 @@
       content: '';
       @include abs-cover;
       background-image: linear-gradient(to right, $dark-bg 0%, transparent 10%, transparent 60%, $dark-bg 100%);
+
+      @include bp(custom, max, 767px) {
+        background-image: linear-gradient(to right, $dark-bg 0%, transparent 30%, transparent 70%, $dark-bg 100%);
+      }
     }
 
     .skill-row {
-      display: flex;
-      gap: vw(20px, 10px);
+      position: relative;
+      width: 100%;
       margin-bottom: vw(20px, 10px);
-      --animation-speed: 60s;
+      --animation-speed: 50s;
 
-      &:nth-child(odd) {
+      .inner-wrapper {
+        position: relative;
+        display: flex;
+        gap: vw(20px, 10px);
+      }
+
+      &:nth-child(odd) .inner-wrapper {
         animation: scrollToLeft linear var(--animation-speed) infinite;
       }
 
-      &:nth-child(even) {
-        transform: translate3d(-50%, 0, 0);
+      &:nth-child(even) .inner-wrapper {
+        transform: translate3d(-106.75%, 0, 0);
         animation: scrollToRight linear var(--animation-speed) infinite;
+
+        @include bp(custom, max, 767px) {
+          transform: translate3d(-212.5%, 0, 0);
+        }
       }
 
       &:last-child {
         margin-bottom: 0;
       }
     }
+
+    @include bp(custom, max, 767px) {
+      width: auto;
+      margin: 0 calc(50% - 50vw);
+    }
+  }
+
+  @include bp(custom, max, 767px) {
+    display: block;
+    padding: vw(150px, 80px) calc(50vw - 50%);
   }
 }
 
 // BLOCK: SKILL LOOP ITEM
 @include b(skill-loop-item) {
   aspect-ratio: 200/90;
-  height: 90px;
+  height: vw(90px, 70px);
   padding: vw(20px, 10px) vw(25px, 15px);
   background: #0E0E0E;
   border: 3px solid #161616;
@@ -349,6 +413,7 @@
   justify-content: space-between;
 
   p {
+    @include base-font;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -390,6 +455,68 @@
     &.name {
       text-transform: uppercase;
       font-weight: 900;
+    }
+  }
+}
+
+// BLOCK: PROJECTS HIGHLIGHT
+@include b(projects-highlight) {
+  margin: 0 calc(50% - 50vw);
+  padding: vw(100px, 50px) vw(50px, 30px);
+
+  @include e(wrapper) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: vw(50px, 25px);
+  }
+}
+
+// BLOCK: PROJECT LOOP ITEM
+@include b(project-loop-item) {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 1;
+  padding: vw(70px, 40px) vw(70px, 30px);
+
+  @include e(image) {
+    @include abs-cover;
+    z-index: -1;
+
+    .image-holder {
+      @include abs-cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  @include e(header) {
+
+    .title {
+      @include support-font;
+      font-size: vw(50px, 26px);
+      font-weight: 900;
+      line-height: 1.24em;
+      text-transform: uppercase;
+      margin-bottom: vw(12px, 6px);
+    }
+
+    .short {
+      width: vw(260px, 160px);
+      line-height: 1.4em;
+
+      @include bp(custom, max, 767px) {
+        width: 80%;
+      }
+    }
+
+    .title,
+    .short {
+      color: $dark-text;
     }
   }
 }

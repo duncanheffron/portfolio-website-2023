@@ -12,6 +12,7 @@
 import ExperienceSlider from '@/components/Experience/Slider.vue';
 import BlockContentWithImage from '@/components/Block/ContentWithImage.vue';
 import BlockAboutMe from '@/components/Block/AboutMe.vue';
+import BlockProjectsHighlight from '@/components/Block/ProjectsHighlight';
 import pageContent from '~/content/index.json'
 
 export default {
@@ -23,7 +24,8 @@ export default {
   components: {
     ExperienceSlider,
     BlockContentWithImage,
-    BlockAboutMe
+    BlockAboutMe,
+    BlockProjectsHighlight
   }
 }
 </script>

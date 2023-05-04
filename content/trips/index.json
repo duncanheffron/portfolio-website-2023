@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "<span>Trips</span>",
+    "introduction": "Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum."
+  },
+  "blocks": [
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "reversed",
+        "background": "dark",
+        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "https://picsum.photos/1250/800",
+          "alt": "Just an example image"
+        },
+        "buttons": [
+          {
+            "class": "main-btn main-btn--diap",
+            "title": "More about this trip",
+            "url": "#"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "normal",
+        "background": "light",
+        "title": "<span class=\"text-highlight\">Safari Park</span><br> Beekse bergen",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "https://picsum.photos/1250/1000",
+          "alt": "Just an example image"
+        },
+        "buttons": [
+          {
+            "class": "main-btn",
+            "title": "More about this trip",
+            "url": "#"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "reversed",
+        "background": "light",
+        "title": "<span class=\"text-highlight\">250</span> Birthday party",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "https://picsum.photos/1250/900",
+          "alt": "Just an example image"
+        },
+        "buttons": [
+          {
+            "class": "main-btn",
+            "title": "More about this celebration",
+            "url": "#"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "normal",
+        "background": "dark",
+        "title": "<span class=\"text-highlight\">Gran Canaria</span>",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "https://picsum.photos/1250/700",
+          "alt": "Just an example image"
+        },
+        "buttons": [
+          {
+            "class": "main-btn main-btn--diap",
+            "title": "More about this trip",
+            "url": "#"
+          }
+        ]
+      }
+    }
+  ]
+}

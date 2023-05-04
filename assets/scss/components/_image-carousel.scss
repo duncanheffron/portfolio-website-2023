@@ -23,31 +23,28 @@
   
   .column {
     width: 100%;
-    --animation-speed: 140s;
+    --animation-speed: 340s;
     
-    img {
-      display: block;
-      width: 100%;
-      aspect-ratio: 1/1.25;
-      object-fit: cover;
-      object-position: center;
+    .image-holder {
+      position: relative;
+      overflow: hidden;
       margin-bottom: vw(20px, 10px);
+
+      img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1.25;
+        object-fit: cover;
+        object-position: center;
+        background: mix($dark-bg, $light-bg, 95);
+      }
     }
     
-    &:nth-child(1) {
+    &:nth-child(odd) {
       animation: scrollToTop linear var(--animation-speed) infinite;
     }
     
-    &:nth-child(2) {
-      transform: translate3d(0, -50%, 0);
-      animation: scrollToBottom linear var(--animation-speed) infinite;
-    }
-    
-    &:nth-child(3) {
-      animation: scrollToTop linear var(--animation-speed) infinite;
-    }
-    
-    &:nth-child(4) {
+    &:nth-child(even) {
       transform: translate3d(0, -50%, 0);
       animation: scrollToBottom linear var(--animation-speed) infinite;
     }

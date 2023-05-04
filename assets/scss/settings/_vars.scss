@@ -12,6 +12,10 @@ $support-font: 'Open Sans', sans-serif;
   font-family: $base-font;
 }
 
+@mixin support-font {
+  font-family: $support-font;
+}
+
 // Base font sizes (based on 1920px)
 $text-base: 20px;
 $text-base-min: 15px;

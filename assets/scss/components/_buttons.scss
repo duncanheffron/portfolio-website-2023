@@ -39,15 +39,24 @@ a {
 @include b(main-btn) {
   @extend %button-base;
   color: $base-text;
-  background-image: linear-gradient(to right, $primary 50%, $dark-bg 50%);
-  background-size: 200% 100%;
-  background-position: 100% 100%;
+  background: $dark-bg;
   padding: vw(20px, 10px) vw(36px, 20px);
+  box-shadow: 0 0 0 $primary;
   @include animated;
 
   @include hover {
     color: $base-text;
-    background-position: 0 100%;
+    box-shadow: vw(-10px) vw(10px) 0 $primary;
+    transform: translate3d(vw(10px), vw(-10px), 0);
+  }
+
+  @include m(diap) {
+    color: $dark-text;
+    background: $base-text;
+
+    @include hover {
+      color: $dark-text;
+    }
   }
 
   &[disabled] {
@@ -73,25 +82,25 @@ a {
   -webkit-background-clip: text;
   @include animated;
 
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: vw(10px, 5px);
-    width: 100%;
-    height: 3px;
-    background: $primary;
-    transform-origin: left center;
-    transform: scale3d(0, 1, 1);
-    @include animated;
-  }
+  //&:after {
+  //  content: '';
+  //  display: block;
+  //  position: absolute;
+  //  bottom: vw(10px, 5px);
+  //  width: 100%;
+  //  height: 3px;
+  //  background: $primary;
+  //  transform-origin: left center;
+  //  transform: scale3d(0, 1, 1);
+  //  @include animated;
+  //}
 
   @include hover {
     background-position: 0 100%;
 
-    &:after {
-      transform: none;
-    }
+    //&:after {
+    //  transform: none;
+    //}
   }
 
   &[disabled] {

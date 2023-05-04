@@ -1,12 +1,12 @@
 <template>
-  <div class="skill-loop-item">
-    <p :class="`level level--${levelString}`" :data-skill-level="levelString"><span></span>{{ levelString }}</p>
-    <p class="name">{{ skill.name }}</p>
-  </div>
+    <div class="skill-loop-item">
+        <p :class="`level level--${levelString}`" :data-skill-level="levelString"><span></span>{{ levelString }}</p>
+        <p class="name">{{ skill.name }}</p>
+    </div>
 </template>
 
 <script setup>
-const { skill } = defineProps(['skill']);
+const {skill} = defineProps(['skill']);
 
 const levelString = computed(() => {
   if (skill.level === 0) {

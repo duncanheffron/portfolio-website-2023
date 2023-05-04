@@ -23,7 +23,11 @@ a, button {
 
 @keyframes scrollToLeft {
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-106.75%, 0, 0);
+
+    @include bp(custom, max, 767px) {
+      transform: translate3d(-212.5%, 0, 0);
+    }
   }
 }
 
@@ -57,5 +61,11 @@ a, button {
   100% {
     transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);
     opacity: 1;
+  }
+}
+
+@keyframes rollOpen {
+  to {
+    transform: translate3d(0, -100%, 0);
   }
 }

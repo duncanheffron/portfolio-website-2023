@@ -1,6 +1,6 @@
 <template>
   <div class="inner-container">
-    <div class="content-with-image content-with-image--light content-with-image--reversed">
+    <div :class="`content-with-image content-with-image--${props.background} content-with-image--${props.order}`">
 
       <div class="content-with-image__image">
         <div class="image-holder">
