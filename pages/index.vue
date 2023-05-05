@@ -10,10 +10,10 @@
 
 <script setup>
 useServerSeoMeta({
-    title: 'My Amazing Site',
-    ogTitle: 'My Amazing Site',
-    description: 'This is my amazing site, let me tell you all about it.',
-    ogDescription: 'This is my amazing site, let me tell you all about it.',
+    title: 'Duncan Heffro — Personal portfolio',
+    ogTitle: 'Duncan Heffro — Personal portfolio',
+    description: 'A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending.This is my amazing site, let me tell you all about it.',
+    ogDescription: 'A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending.',
     ogImage: '',
     twitterCard: ''
 });
