@@ -11,10 +11,10 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     },
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in' // default
-    }
+    // pageTransition: {
+    //   name: 'page',
+    //   mode: 'out-in' // default
+    // }
   },
   css: ["@/assets/scss/style.scss"],
   devtools: false
