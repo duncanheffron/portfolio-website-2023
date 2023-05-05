@@ -28,10 +28,10 @@
       </div>
 
       <div class="about-me__skills">
-        <div class="skill-row" v-for="(row, index) in splitSkills" :key="index">
+        <div class="skill-row" v-for="(row, index) in rows" :key="index">
           <div class="inner-wrapper">
-            <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex" :skill="skill" />
-            <BlockSkillLoopItem v-for="(skill, skillIndex) in row" :key="skillIndex + 7" :skill="skill" />
+            <BlockSkillLoopItem v-for="(skill, index) in row" :key="index" :skill="skill" />
+            <BlockSkillLoopItem v-for="(skill, index) in row" :key="index + 7" :skill="skill" />
           </div>
         </div>
       </div>
@@ -40,16 +40,17 @@
 </template>
 
 <script setup>
-const { props } = defineProps(['props']);
+import pkg from 'lodash'; 
+const { shuffle } = pkg;
 
-const shuffledSkills = props.skills.slice().sort(() => Math.random() - 0.5);
+const { props } = defineProps(['props'])
 
-const numRows = 7;
-const numItemsPerRow = Math.ceil(shuffledSkills.length / numRows);
+const skills = shuffle(props.skills) // shuffle the array
 
-const splitSkills = Array.from({ length: numRows }, (_, i) => {
-  const startIndex = i * numItemsPerRow;
-  const endIndex = Math.min((i + 1) * numItemsPerRow, shuffledSkills.length);
-  return shuffledSkills.slice(startIndex, endIndex);
-});
+const rows = [[], [], [], [], [], [], []] // create 7 empty rows
+
+// divide images into 4 equal parts
+for (let i = 0; i < skills.length; i++) {
+  rows[i % 7].push(skills[i])
+}
 </script>
