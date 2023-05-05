@@ -29,7 +29,8 @@
 
 <script setup>
 import galleryContent from '~/content/image-gallery.json'
-import { shuffle } from 'lodash'
+import pkg from 'lodash'; 
+const { shuffle } = pkg;
 
 const { props } = defineProps(['props'])
 
