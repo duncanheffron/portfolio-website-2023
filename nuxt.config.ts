@@ -3,8 +3,9 @@ export default defineNuxtConfig({
   pages: true,
   modules: [
     '@nuxt/content',
+    'nuxt-lodash',
     'nuxt-swiper'
   ],
   css: ["@/assets/scss/style.scss"],
-  devtools: true,
+  devtools: false,
 })
