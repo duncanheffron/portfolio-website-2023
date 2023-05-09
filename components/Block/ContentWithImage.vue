@@ -1,10 +1,10 @@
 <template>
-  <div class="inner-container">
+  <section class="inner-container">
     <div :class="`content-with-image content-with-image--${props.background} content-with-image--${props.order}`">
 
       <div class="content-with-image__image">
         <div class="image-holder">
-          <img :src="props.image.url" :alt="props.image.alt">
+          <nuxt-img :src="props.image.url" :alt="props.image.alt" sizes="xs:100vw md:50vw xl:800px xxl:1600px xxxl:2560px" quality="100" loading="lazy" />
         </div>
       </div>
 
@@ -19,7 +19,7 @@
       </div>
 
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

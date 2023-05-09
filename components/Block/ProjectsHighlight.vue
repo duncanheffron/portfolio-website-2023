@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-container">
+    <section class="inner-container">
         <div class="projects-highlight">
 
             <div class="projects-highlight__wrapper">
@@ -7,7 +7,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

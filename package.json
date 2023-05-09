@@ -11,6 +11,7 @@
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
     "@nuxt/devtools": "^0.4.1",
+    "@nuxt/image-edge": "^1.0.0-28059208.2abef1b",
     "@nuxtjs/stylelint-module": "^5.0.1",
     "@types/node": "^18",
     "nuxt": "^3.4.2",

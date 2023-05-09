@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "I'm <span>Duncan</span>",
-    "introduction": "A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending."
+    "intro": "A frontend web developer based in the Netherlands with roughly 5 years of experience. Who's driven to meet new people, which is why I spend most of my Saturday nights bartending."
   },
   "blocks": [
     {
@@ -54,14 +54,14 @@
         "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
         "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
         "image": {
-          "url": "https://picsum.photos/1250/800",
-          "alt": "Just an example image"
+          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
+          "alt": "Together with my sister in front of the Disneyland castle"
         },
         "buttons": [
           {
             "class": "main-btn",
             "title": "More about this trip",
-            "url": "#"
+            "url": "/trips/disneyland-paris-2023"
           },
           {
             "class": "clear-btn",
@@ -79,143 +79,143 @@
         "skills": [
           {
             "name": "HTML5",
-            "level": 2
+            "level": "proficient"
           },
           {
             "name": "CSS3",
-            "level": 2
+            "level": "proficient"
           },
           {
             "name": "Nuxt 3",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "SCSS",
-            "level": 3
+            "level": "expert"
           },
           {
             "name": "PHP",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "GraphQL",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "javascript",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "vagrant",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "nodeJS",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "TrueNAS",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Figma",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Expression engine",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Illustrator",
-            "level": 2
+            "level": "proficient"
           },
           {
             "name": "Photoshop",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Flutter",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Dart",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Hospitality",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Adobe Xd",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Sketch",
-            "level": 2
+            "level": "proficient"
           },
           {
             "name": "App design",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "UI / UX",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Scrum",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Laravel",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Angular",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Firebase",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "WordPress",
-            "level": 2
+            "level": "proficient"
           },
           {
             "name": "Typescript",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Baker",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Cook",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Bartender",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "ACF",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "GSAP",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "Bootstrap",
-            "level": 1
+            "level": "intermediate"
           },
           {
             "name": "React",
-            "level": 0
+            "level": "beginner"
           },
           {
             "name": "Webdesign",
-            "level": 2
+            "level": "proficient"
           }
         ]
       }
@@ -229,7 +229,7 @@
             "short": "Landing page design, as part of the daily UI challanges.",
             "image": {
               "url": "/images/projects/burgr-app-design-challange.webp",
-              "alt": "Just an example image"
+              "alt": "Mockup image of the Burgr. app landing page"
             }
           },
           {
@@ -237,7 +237,7 @@
             "short": "Personal care management app design",
             "image": {
               "url": "/images/projects/firecare-app-design.webp",
-              "alt": "Just an example image"
+              "alt": "Mockup image of the FireCare app"
             }
           }
         ]

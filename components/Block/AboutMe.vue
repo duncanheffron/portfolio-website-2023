@@ -1,5 +1,5 @@
 <template>
-  <div class="inner-container">
+  <section class="inner-container">
     <div class="about-me">
       <div class="about-me__content">
         <h2 class="like-h1 title" v-html="props.title"></h2>
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

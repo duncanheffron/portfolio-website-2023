@@ -12,6 +12,10 @@
             <p class="short">{{ project.short }}</p>
         </div>
 
+        <div class="project-loop-item__arrow">
+            <span class="icon"></span>
+        </div>
+
     </div>
 </template>
 

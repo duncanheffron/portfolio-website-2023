@@ -412,7 +412,48 @@
   flex-direction: column;
   justify-content: space-between;
 
-  p {
+  .level {
+    display: inline-flex;
+    align-items: center;
+    color: $gray-text;
+
+    p {
+      @include base-font;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      line-height: 1.22222222em;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: inline-block;
+      width: .5em;
+      height: .5em;
+      background: $base-text;
+      margin-right: .5em;
+      @include border-radius(100%);
+    }
+
+    &.level--beginner span {
+      background: #DE454B;
+    }
+
+    &.level--intermediate span {
+      background: #3F68DA;
+    }
+
+    &.level--proficient span {
+      background: #78E855;
+    }
+
+    &.level--expert span {
+      background: #B43FDA;
+    }
+  }
+
+  .name {
     @include base-font;
     white-space: nowrap;
     overflow: hidden;
@@ -420,42 +461,8 @@
     max-width: 100%;
     line-height: 1.22222222em;
     margin-bottom: 0;
-
-    &.level {
-      display: inline-flex;
-      align-items: center;
-      color: $gray-text;
-
-      span {
-        display: inline-block;
-        width: .5em;
-        height: .5em;
-        background: $base-text;
-        margin-right: .5em;
-        @include border-radius(100%);
-      }
-
-      &.level--beginner span {
-        background: #DE454B;
-      }
-
-      &.level--intermediate span {
-        background: #3F68DA;
-      }
-
-      &.level--proficient span {
-        background: #78E855;
-      }
-
-      &.level--expert span {
-        background: #B43FDA;
-      }
-    }
-
-    &.name {
-      text-transform: uppercase;
-      font-weight: 900;
-    }
+    text-transform: uppercase;
+    font-weight: 900;
   }
 }
 
@@ -517,6 +524,27 @@
     .title,
     .short {
       color: $dark-text;
+    }
+  }
+
+  @include e(arrow) {
+    position: absolute;
+    top: vw(70px, 40px);
+    right: vw(70px, 30px);
+    z-index: 1;
+    width: vw(50px, 40px);
+    height: vw(50px, 40px);
+    border: 2px solid $dark-text;
+    @include border-radius(100px);
+
+    .icon {
+      @include center('both');
+      display: block;
+      width: 25%;
+      height: 25%;
+      border-top: 2px solid $dark-text;
+      border-right: 2px solid $dark-text;
+      transform: translate3d(-65%, -35%, 0);
     }
   }
 }

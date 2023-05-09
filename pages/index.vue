@@ -2,9 +2,9 @@
   <div>
     <HeaderHomepage :props="content.header" />
 
-    <div v-for="(item, index) in content.blocks" :key="index">
+    <main id="main" v-for="(item, index) in content.blocks" :key="index">
       <component :is="item.componentName" :props="item.props"></component>
-    </div>
+    </main>
   </div>
 </template>
 

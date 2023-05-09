@@ -12,14 +12,14 @@
         "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
         "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
         "image": {
-          "url": "https://picsum.photos/1250/800",
-          "alt": "Just an example image"
+          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
+          "alt": "Together with my sister in front of the Disneyland castle"
         },
         "buttons": [
           {
             "class": "main-btn main-btn--diap",
             "title": "More about this trip",
-            "url": "#"
+            "url": "/trips/disneyland-paris-2023"
           }
         ]
       }
@@ -32,14 +32,14 @@
         "title": "<span class=\"text-highlight\">Safari Park</span><br> Beekse bergen",
         "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
         "image": {
-          "url": "https://picsum.photos/1250/1000",
-          "alt": "Just an example image"
+          "url": "/images/trips/beeksebergen-092022/thumbnail.JPG",
+          "alt": "My mother on my shoulders in the safari park"
         },
         "buttons": [
           {
             "class": "main-btn",
             "title": "More about this trip",
-            "url": "#"
+            "url": "/trips/safari-park-beekse-bergen"
           }
         ]
       }
@@ -52,14 +52,14 @@
         "title": "<span class=\"text-highlight\">250</span> Birthday party",
         "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
         "image": {
-          "url": "https://picsum.photos/1250/900",
-          "alt": "Just an example image"
+          "url": "/images/trips/250-party-042022/thumbnail.jpg",
+          "alt": "Celebrating my 25th and my mothers 50th birthday together"
         },
         "buttons": [
           {
             "class": "main-btn",
             "title": "More about this celebration",
-            "url": "#"
+            "url": "/trips/250-birthday-party"
           }
         ]
       }
@@ -72,14 +72,14 @@
         "title": "<span class=\"text-highlight\">Gran Canaria</span>",
         "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
         "image": {
-          "url": "https://picsum.photos/1250/700",
-          "alt": "Just an example image"
+          "url": "/images/trips/grancanaria-102019/thumbnail.jpg",
+          "alt": "Together with my grandmother at the hotel in Gran Canaria"
         },
         "buttons": [
           {
             "class": "main-btn main-btn--diap",
             "title": "More about this trip",
-            "url": "#"
+            "url": "/trips/gran-canaria"
           }
         ]
       }

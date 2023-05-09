@@ -1,14 +1,14 @@
 <template>
-    <div class="header-homepage">
+    <header class="header-homepage">
         <div class="header-homepage__image-carousel">
             <div class="scrolling-image-carousel">
                 <div class="inner-wrapper">
                     <div class="column" v-for="column in columns" :key="column">
                         <div class="image-holder" v-for="(image, index) in column" :key="index">
-                            <img :src="image.url" :alt="image.alt" />
+                            <nuxt-img :src="image.url" :alt="image.alt" sizes="xs:200px md:350px xl:400px xxl:800px" quality="100" loading="lazy" />
                         </div>
                         <div class="image-holder" v-for="(image, index) in column" :key="index + 80">
-                            <img :src="image.url" :alt="image.alt" />
+                            <nuxt-img :src="image.url" :alt="image.alt" sizes="xs:200px md:350px xl:400px xxl:800px" quality="100" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -19,11 +19,11 @@
                 <h1 v-html="props.title"></h1>
                 <p>{{ props.introduction }}</p>
                 <div class="scroll-down">
-                    <a href="#" class="btn"><span></span></a>
+                    <a href="#main" class="btn" data-scroll-link><span></span></a>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 </template>
 
 
@@ -51,4 +51,5 @@ export default {
   },
 }
 </script>
+
 
