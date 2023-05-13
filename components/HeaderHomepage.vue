@@ -17,7 +17,7 @@
         <div class="header-homepage__content">
             <div class="inner-container">
                 <h1 v-html="props.title"></h1>
-                <p>{{ props.introduction }}</p>
+                <p v-html="props.intro"></p>
                 <div class="scroll-down">
                     <a href="#main" class="btn" data-scroll-link><span></span></a>
                 </div>

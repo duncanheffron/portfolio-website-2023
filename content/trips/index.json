@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "<span>Trips</span>",
-    "introduction": "Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum."
+    "intro": "Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum."
   },
   "blocks": [
     {
@@ -79,7 +79,7 @@
           {
             "class": "main-btn main-btn--diap",
             "title": "More about this trip",
-            "url": "/trips/gran-canaria"
+            "url": "/trips/gran-canaria-2019"
           }
         ]
       }

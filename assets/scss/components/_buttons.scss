@@ -59,6 +59,15 @@ a {
     }
   }
 
+  @include m(alt) {
+    background: $primary;
+    box-shadow: 0 0 0 $dark-bg;
+
+    @include hover {
+      box-shadow: vw(-10px) vw(10px) 0 $dark-bg;
+    }
+  }
+
   &[disabled] {
     &,
     &:hover,
@@ -82,25 +91,8 @@ a {
   -webkit-background-clip: text;
   @include animated;
 
-  //&:after {
-  //  content: '';
-  //  display: block;
-  //  position: absolute;
-  //  bottom: vw(10px, 5px);
-  //  width: 100%;
-  //  height: 3px;
-  //  background: $primary;
-  //  transform-origin: left center;
-  //  transform: scale3d(0, 1, 1);
-  //  @include animated;
-  //}
-
   @include hover {
     background-position: 0 100%;
-
-    //&:after {
-    //  transform: none;
-    //}
   }
 
   &[disabled] {

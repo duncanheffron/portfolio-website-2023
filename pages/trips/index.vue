@@ -3,10 +3,19 @@
     <HeaderHomepage :props="content.header" />
 
     <main id="main" v-for="(item, index) in content.blocks" :key="index">
-      <component :is="item.componentName" :props="item.props"></component>
+      <div class="inner-container">
+          <component :is="item.componentName" :props="item.props"></component>
+      </div>
     </main>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'Trips — Duncan Heffron',
+  ogTitle: 'Trips — Duncan Heffron',
+})
+</script>
 
 <script>
 import BlockContentWithImage from '@/components/Block/ContentWithImage.vue';

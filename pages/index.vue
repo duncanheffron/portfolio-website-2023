@@ -3,7 +3,9 @@
     <HeaderHomepage :props="content.header" />
 
     <main id="main" v-for="(item, index) in content.blocks" :key="index">
-      <component :is="item.componentName" :props="item.props"></component>
+      <div class="inner-container">
+          <component :is="item.componentName" :props="item.props"></component>
+      </div>
     </main>
   </div>
 </template>

@@ -1,0 +1,78 @@
+/*
+  @file   /components/_footers.scss
+  @desc   All footer related styling should be placed in this file.
+  @ver    1.0
+*/
+
+// BLOCK: FOOTER
+@include b(footer) {
+  padding: vw(60px, 20px) 0;
+  background: $light-bg;
+
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bp(custom, max, 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @include e(brand) {
+
+    a {
+      @include base-font;
+      @include large;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $dark-text;
+      line-height: 1.25em;
+      text-decoration: none;
+
+      .text-highlight {
+        display: inline-block;
+        color: $base-text;
+        background-color: $primary;
+        line-height: 1.25em;
+        padding: 1px 5px 0;
+        margin: 0;
+      }
+    }
+  }
+
+  @include e(nav) {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      column-gap: vw(30px, 20px);
+
+      li {
+
+        a {
+          @include base-font;
+          @include base;
+          font-weight: 900;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $dark-text;
+          background-image: linear-gradient(to right, $primary 50%, $dark-bg 50%);
+          background-size: 200% 100%;
+          background-position: 100% 100%;
+          padding: vw(20px, 10px) 0;
+          -webkit-text-fill-color: rgba(0 ,0 ,0 , 0);
+          -webkit-background-clip: text;
+          @include animated;
+
+          @include hover {
+            background-position: 0 100%;
+          }
+        }
+      }
+    }
+  }
+}

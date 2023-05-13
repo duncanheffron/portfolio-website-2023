@@ -69,6 +69,7 @@
       line-height: 1em;
       text-transform: uppercase;
       width: vw(632px, 300px);
+      margin-top: vw(130px, 50px);
 
       span {
         display: inline-block;
@@ -79,6 +80,10 @@
 
       @include bp(custom, max, 767px) {
         width: 100%;
+      }
+
+      @include bp(custom, min, 1920px) {
+        margin-top: vw(60px, 30px);
       }
     }
 
@@ -98,7 +103,7 @@
         display: block;
         width: vw(50px, 40px);
         height: vw(50px, 40px);
-        border: 2px solid #fff;
+        border: vw(2px, 2px) solid #fff;
         @include border-radius(100px);
         @include animated;
         overflow: hidden;
@@ -108,8 +113,8 @@
           display: block;
           width: 25%;
           height: 25%;
-          border-right: 2px solid #fff;
-          border-bottom: 2px solid #fff;
+          border-right: vw(2px, 2px) solid #fff;
+          border-bottom: vw(2px, 2px) solid #fff;
           transform: translate3d(-50%, -65%, 0) rotate3d(0, 0, 1, 45deg);
           @include animated;
         }
@@ -123,6 +128,10 @@
             animation: arrowScrollButton .85s ease-in-out forwards;
           }
         }
+      }
+
+      @include bp(custom, min, 1920px) {
+        margin-top: vw(60px, 30px);
       }
     }
 

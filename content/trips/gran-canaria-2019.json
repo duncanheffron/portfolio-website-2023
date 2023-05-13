@@ -1,0 +1,70 @@
+{
+  "title": "Gran Canaria",
+  "header": {
+    "title": "<span class=\"text-highlight\">Gran Canaria</span>",
+    "intro": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+    "image": {
+      "url": "/images/trips/grancanaria-102019/thumbnail.jpg",
+      "alt": "Together with my grandmother at the hotel in Gran Canaria"
+    }
+  },
+  "blocks": [
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "normal",
+        "background": "light",
+        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
+          "alt": "Together with my sister in front of the Disneyland castle"
+        }
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "reversed",
+        "background": "dark",
+        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
+        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "image": {
+          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
+          "alt": "Together with my sister in front of the Disneyland castle"
+        }
+      }
+    },
+    {
+      "componentName": "BlockTripGallery",
+      "props": {
+        "images": [
+          {
+            "url": "/images/trips/disneyland-032023/gallery-1.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/gallery-2.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/gallery-3.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/gallery-4.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/gallery-5.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/gallery-6.jpeg",
+            "alt": "Together with my sister in front of the Disneyland castle"
+          }
+        ]
+      }
+    }
+  ]
+}
