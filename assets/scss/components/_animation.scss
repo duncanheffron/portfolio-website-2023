@@ -69,3 +69,15 @@ a, button {
     transform: translate3d(0, -100%, 0);
   }
 }
+
+@keyframes pulse {
+  0% {
+    background: rgba(#fff, 0);
+  }
+  50% {
+    background: rgba(#fff, .2);
+  }
+  100% {
+    background: rgba(#fff, 0);
+  }
+}

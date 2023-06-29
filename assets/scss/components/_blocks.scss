@@ -713,3 +713,90 @@
     }
   }
 }
+
+// BLOCK: PHOTO BOOK
+@include b(photo-book) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: vw(100px, 50px) 0;
+
+  @include bp(custom, max, 767px) {
+    gap: 10px;
+  }
+}
+
+// BLOCK: PHOTO BOOK LOOP ITEM
+@include b(photo-book-loop-item) {
+  position: relative;
+  width: calc(40% - 15px);
+  overflow: hidden;
+  @include animated;
+
+  .image-holder {
+
+    img {
+      aspect-ratio: 511/585;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .image-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: vw(20px, 10px) vw(20px, 10px);
+    background-color: rgba($dark-bg, .9);
+    transform: translateY(100%);
+    @include animated;
+
+    p {
+      @include small;
+      margin: 0;
+    }
+
+    @include bp(custom, max, 1279px) {
+      transform: none;
+    }
+  }
+
+  &:nth-child(4n+2),
+  &:nth-child(4n+3) {
+    width: calc(60% - 15px);
+
+    .image-holder {
+
+      img {
+        aspect-ratio: 975/585;
+      }
+    }
+  }
+
+  @include hover {
+    .image-caption {
+      transform: translateY(0);
+    }
+  }
+
+  @include bp(custom, max, 767px) {
+    width: 100%;
+
+    .image-holder img {
+      aspect-ratio: 1;
+    }
+
+    &:nth-child(4n+2),
+    &:nth-child(4n+3) {
+      width: 100%;
+
+      .image-holder img {
+        aspect-ratio: 1;
+      }
+    }
+  }
+}

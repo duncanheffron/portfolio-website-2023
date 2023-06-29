@@ -29,6 +29,11 @@
       position: relative;
       overflow: hidden;
       margin-bottom: vw(20px, 10px);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: blur(5px);
+      @include animated;
 
       img {
         display: block;
@@ -37,6 +42,16 @@
         object-fit: cover;
         object-position: center;
         background: mix($dark-bg, $light-bg, 95%);
+        opacity: 0;
+        @include animated;
+      }
+
+      &.loaded {
+        filter: none;
+
+        img {
+          opacity: 1;
+        }
       }
     }
     

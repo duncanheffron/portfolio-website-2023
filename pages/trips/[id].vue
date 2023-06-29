@@ -4,7 +4,7 @@
             <Title>{{ content.title }} — Duncan Heffron</Title>
         </Head>
 
-        <HeaderHomepage :props="content.header" />
+        <ExperienceHeader :props="content.header" />
 
         <main id="main" v-for="(item, index) in content.blocks" :key="index">
             <div class="inner-container">
@@ -24,13 +24,15 @@ import ExperienceSlider from '@/components/Experience/Slider.vue';
 import BlockContentWithImage from '@/components/Block/ContentWithImage.vue';
 import BlockAboutMe from '@/components/Block/AboutMe.vue';
 import BlockProjectsHighlight from '@/components/Block/ProjectsHighlight';
+import BlockPhotoBook from '@/components/Block/PhotoBook';
 
 export default {
   components: {
     ExperienceSlider,
     BlockContentWithImage,
     BlockAboutMe,
-    BlockProjectsHighlight
+    BlockProjectsHighlight,
+    BlockPhotoBook,
   }
 }
 </script>

@@ -36,32 +36,12 @@
       }
     },
     {
-      "componentName": "BlockTripGallery",
+      "componentName": "BlockPhotoBook",
       "props": {
         "images": [
           {
-            "url": "/images/trips/disneyland-032023/gallery-1.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-2.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-3.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-4.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-5.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-6.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/beeksebergen-092022/photo-book/beeksebergen_photo-book_01.jpg",
+            "alt": "Sitting next to a penguin"
           }
         ]
       }

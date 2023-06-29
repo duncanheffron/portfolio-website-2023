@@ -36,32 +36,64 @@
       }
     },
     {
-      "componentName": "BlockTripGallery",
+      "componentName": "BlockPhotoBook",
       "props": {
         "images": [
           {
-            "url": "/images/trips/disneyland-032023/gallery-1.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_01.jpg",
+            "alt": "Eating a Mickey Mouse cookie with my sister"
           },
           {
-            "url": "/images/trips/disneyland-032023/gallery-2.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_02.jpg",
+            "alt": "In front of the Disney Hollywood Studios park"
           },
           {
-            "url": "/images/trips/disneyland-032023/gallery-3.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_03.jpg",
+            "alt": "At the entrance of the Avengers Campus"
           },
           {
-            "url": "/images/trips/disneyland-032023/gallery-4.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_04.jpg",
+            "alt": "In front of Buzz Lightyear in Toy Story Land"
           },
           {
-            "url": "/images/trips/disneyland-032023/gallery-5.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_05.jpg",
+            "alt": "In front of Buzz Lightyear in Toy Story Land"
           },
           {
-            "url": "/images/trips/disneyland-032023/gallery-6.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_06.jpg",
+            "alt": "Giving Mickey Mouse a handshake"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_07.jpg",
+            "alt": "Making a fun picture with my sister and Mickey Mouse"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_08.jpg",
+            "alt": "Second day in the Hollywood Studios park"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_09.jpg",
+            "alt": "Saluting with captain America"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_10.jpg",
+            "alt": "A hero stance together with my sister and black widow"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_11.jpg",
+            "alt": "In front of the Disney Castle"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_12.jpg",
+            "alt": "Leaving on the last day after the big firework show"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_13.jpg",
+            "alt": "My sister taking a cool picture with stitch"
+          },
+          {
+            "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_14.jpg",
+            "alt": "All together with stitch and my sister"
           }
         ]
       }
