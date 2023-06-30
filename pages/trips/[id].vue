@@ -1,8 +1,6 @@
 <template>
     <div>
-        <Head>
-            <Title>{{ content.title }} — Duncan Heffron</Title>
-        </Head>
+        <Title>{{ content.title }} — Duncan Heffron</Title>
 
         <ExperienceHeader :props="content.header" />
 
@@ -17,6 +15,10 @@
 <script setup>
 const route = useRoute();
 const { data: content } = await useAsyncData('Trip', () => queryContent(`/trips/${route.params.id}`).findOne());
+
+if (!content.value) {
+  throw createError({ statusCode: 404 })
+}
 </script>
 
 <script>

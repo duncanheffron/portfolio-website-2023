@@ -1,12 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      viewport: 'width=device-width, initial-scale=1'
     }
   },
-  css: ["@/assets/scss/style.scss"],
+  css: ['@/assets/scss/style.scss'],
   devtools: false,
   modules: [
     '@nuxt/content',
@@ -14,7 +13,6 @@ export default defineNuxtConfig({
     'nuxt-lodash',
     'nuxt-swiper'
   ],
-  pages: true,
   image: {
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
@@ -24,7 +22,7 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       xxl: 1920,
-      xxxl: 2560,
-    },
+      xxxl: 2560
+    }
   }
 });

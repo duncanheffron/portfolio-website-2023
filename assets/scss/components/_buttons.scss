@@ -40,7 +40,7 @@ a {
   @extend %button-base;
   color: $base-text;
   background: $dark-bg;
-  padding: vw(20px, 10px) vw(36px, 20px);
+  padding: vw(20px, 15px) vw(36px, 20px);
   box-shadow: 0 0 0 $primary;
   @include animated;
 
