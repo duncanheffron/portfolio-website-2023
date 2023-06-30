@@ -12,8 +12,8 @@
 
 <script setup>
 useHead({
-  title: 'Trips — Duncan Heffron',
-  ogTitle: 'Trips — Duncan Heffron',
+  title: 'Travel archive — Duncan Heffron',
+  ogTitle: 'Travel archive — Duncan Heffron',
 })
 </script>
 

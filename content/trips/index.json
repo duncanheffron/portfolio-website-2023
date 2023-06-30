@@ -18,7 +18,7 @@
         "buttons": [
           {
             "class": "main-btn",
-            "title": "More about this trip",
+            "title": "More about this magical trip",
             "url": "/trips/disneyland-paris-2023"
           }
         ]
@@ -38,7 +38,7 @@
         "buttons": [
           {
             "class": "main-btn main-btn--diap",
-            "title": "More about this trip",
+            "title": "More about this adventure",
             "url": "/trips/safari-park-beekse-bergen"
           }
         ]
