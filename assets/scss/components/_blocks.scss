@@ -142,7 +142,7 @@
 // BLOCK: CONTENT WITH IMAGE
 @include b(content-with-image) {
   margin: 0 calc(50% - 50vw);
-  padding: vw(150px, 50px) calc(50vw - 50%) vw(100px, 30px);
+  padding: vw(150px, 50px) calc(50vw - 50%);
   display: flex;
   align-items: center;
   column-gap: vw(143px, 50px);

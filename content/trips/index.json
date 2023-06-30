@@ -1,23 +1,23 @@
 {
   "header": {
-    "title": "<span>Trips</span>",
-    "intro": "Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum."
+    "title": "<span>Travel</span> archive",
+    "intro": "Discover unforgettable adventures in my travel archive. Embark on a virtual exploration, embracing the joy of discovery and the wonders of the world. Get inspired as we transport you to different corners of the globe. Welcome to my travel archive, where exploration awaits."
   },
   "blocks": [
     {
       "componentName": "BlockContentWithImage",
       "props": {
         "order": "reversed",
-        "background": "dark",
+        "background": "light",
         "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "body": "In March 2023, my sister and I embarked on a magical trip to Disneyland Paris. Join me as I share the highlights of our unforgettable journey, filled with joy, excitement, and cherished memories. Let's dive into the enchanting world of Disneyland Paris and the City of Lights together!",
         "image": {
           "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
           "alt": "Together with my sister in front of the Disneyland castle"
         },
         "buttons": [
           {
-            "class": "main-btn main-btn--diap",
+            "class": "main-btn",
             "title": "More about this trip",
             "url": "/trips/disneyland-paris-2023"
           }
@@ -28,16 +28,16 @@
       "componentName": "BlockContentWithImage",
       "props": {
         "order": "normal",
-        "background": "light",
+        "background": "dark",
         "title": "<span class=\"text-highlight\">Safari Park</span><br> Beekse bergen",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "body": "In September 2022, my whole family embarked on an exciting adventure to Safari Park Beekse Bergen. Join me as I take you on a journey filled with wildlife encounters, thrilling safari drives, and treasured family moments. Let's explore the wonders of nature together as we dive into the captivating world of Safari Park Beekse Bergen!",
         "image": {
           "url": "/images/trips/beeksebergen-092022/thumbnail.JPG",
           "alt": "My mother on my shoulders in the safari park"
         },
         "buttons": [
           {
-            "class": "main-btn",
+            "class": "main-btn main-btn--diap",
             "title": "More about this trip",
             "url": "/trips/safari-park-beekse-bergen"
           }
@@ -50,7 +50,7 @@
         "order": "reversed",
         "background": "light",
         "title": "<span class=\"text-highlight\">250</span> Birthday party",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "body": "In June of 2022, a double celebration unfolded as I marked my 25th birthday alongside my mother's remarkable 50th milestone. The occasion called for a glamorous gold and black themed extravaganza, set against the backdrop of a stunning location in Harderwijk. Join me as I recount the unforgettable moments from our elegant and jubilant 250th birthday party. Let's immerse ourselves in the beauty and joy of this special celebration.",
         "image": {
           "url": "/images/trips/250-party-042022/thumbnail.jpg",
           "alt": "Celebrating my 25th and my mothers 50th birthday together"
@@ -63,6 +63,45 @@
           }
         ]
       }
+    },{
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "normal",
+        "background": "dark",
+        "title": "<span class=\"text-highlight\">Frankenau</span>",
+        "body": "In August 2020, amidst the COVID-19 restrictions, our family embarked on a memorable vacation to Frankenau, Germany. Despite the necessary precautions like wearing masks, we cherished the time spent together in this picturesque destination. The trip served as a reminder of the resilience and adaptability of our family, creating lasting memories in the midst of challenging circumstances.",
+        "image": {
+          "url": "/images/trips/frankenau-082020/thumbnail.jpg",
+          "alt": "Together with my family in Frankenau"
+        },
+        "buttons": [
+          {
+            "class": "main-btn main-btn--diap",
+            "title": "More about this trip",
+            "url": "/trips/frankenau-2020"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "reversed",
+        "background": "light",
+        "title": "<span class=\"text-highlight\">Fathers 65th</span> Birthday in Valkenburg",
+        "body": "For Father's 65th birthday, we surprised him with a weekend getaway to Valkenburg. Little did we know that the first-ever COVID lockdown would coincide with our trip. Despite the unexpected turn of events, we embraced the opportunity to explore the town and create lasting memories together. Our time in Valkenburg became a testament to celebration and resilience in the face of challenges.",
+        "image": {
+          "url": "/images/trips/valkenburg-032020/thumbnail.jpg",
+          "alt": "Together with my family in Valkenburg"
+        },
+        "buttons": [
+          {
+            "class": "main-btn",
+            "title": "More about this celebration",
+            "url": "/trips/fathers-65th-birthday-in-valkenburg"
+          }
+        ]
+      }
     },
     {
       "componentName": "BlockContentWithImage",
@@ -70,7 +109,7 @@
         "order": "normal",
         "background": "dark",
         "title": "<span class=\"text-highlight\">Gran Canaria</span>",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+        "body": "In October 2019, my grandmother gifted me a 25-day vacation to Gran Canaria as a celebration of my graduation. It was an incredible time filled with bus trips, solo hikes, and unforgettable encounters with English companions. The hotel's lively animation team kept us entertained, and the Indian restaurant's cuisine was a delightful treat. One of the most memorable aspects was walking alongside my grandmother's wheelchair, sharing special moments as we covered thousands of steps each day. Gran Canaria will always hold a special place in my heart.",
         "image": {
           "url": "/images/trips/grancanaria-102019/thumbnail.jpg",
           "alt": "Together with my grandmother at the hotel in Gran Canaria"
@@ -80,6 +119,46 @@
             "class": "main-btn main-btn--diap",
             "title": "More about this trip",
             "url": "/trips/gran-canaria-2019"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "reversed",
+        "background": "light",
+        "title": "<span class=\"text-highlight\">Venice</span>",
+        "body": "In November 2018, I embarked on a surprise 3-day trip to Venice with my aunt. It was a birthday gift she generously arranged, creating memories that will last a lifetime. Our time together in this enchanting city was truly unforgettable.",
+        "image": {
+          "url": "/images/trips/venice-112018/thumbnail.jpg",
+          "alt": "Together with my aunt in Venice"
+        },
+        "buttons": [
+          {
+            "class": "main-btn",
+            "title": "More about this trip",
+            "url": "/trips/venice-with-my-aunt"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "BlockContentWithImage",
+      "props": {
+        "order": "normal",
+        "background": "dark",
+        "title": "<span class=\"text-highlight\">Italy</span>",
+        "body": "In the summer of August 2018, my closest friends from high school and I embarked on an unforgettable journey to Italy. Our tight-knit group, known as 5k, set out on a 15-day adventure, exploring the stunning city of Venice, basking in the beauty of Lake Garda, and discovering numerous other incredible destinations. With the freedom of having a car, we were able to fully immerse ourselves in the versatility and magic of Italy. Together, we created memories that will forever be cherished.",
+        "image": {
+          "url": "/images/trips/italy-082018/thumbnail.jpg",
+          "alt": "Together with my friends in Italy"
+        },
+        "buttons": [
+          {
+            "class": "main-btn main-btn--diap",
+            "title": "More about this trip",
+            "url": "/trips/italy-with-the-boys"
           }
         ]
       }
