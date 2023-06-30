@@ -2,69 +2,11 @@
   "title": "250 Birthday party",
   "header": {
     "title": "<span class=\"text-highlight\">250</span> Birthday party",
-    "intro": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
+    "intro": "In June of 2022, a double celebration unfolded as I marked my 25th birthday alongside my mother's remarkable 50th milestone. The occasion called for a glamorous gold and black themed extravaganza, set against the backdrop of a stunning location in Harderwijk. Join me as I recount the unforgettable moments from our elegant and jubilant 250th birthday party. Let's immerse ourselves in the beauty and joy of this special celebration.",
     "image": {
       "url": "/images/trips/250-party-042022/thumbnail.jpg",
       "alt": "Celebrating my 25th and my mothers 50th birthday together"
     }
   },
-  "blocks": [
-    {
-      "componentName": "BlockContentWithImage",
-      "props": {
-        "order": "normal",
-        "background": "light",
-        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
-        "image": {
-          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
-          "alt": "Together with my sister in front of the Disneyland castle"
-        }
-      }
-    },
-    {
-      "componentName": "BlockContentWithImage",
-      "props": {
-        "order": "reversed",
-        "background": "dark",
-        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
-        "image": {
-          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
-          "alt": "Together with my sister in front of the Disneyland castle"
-        }
-      }
-    },
-    {
-      "componentName": "BlockTripGallery",
-      "props": {
-        "images": [
-          {
-            "url": "/images/trips/disneyland-032023/gallery-1.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-2.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-3.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-4.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-5.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          },
-          {
-            "url": "/images/trips/disneyland-032023/gallery-6.jpeg",
-            "alt": "Together with my sister in front of the Disneyland castle"
-          }
-        ]
-      }
-    }
-  ]
+  "blocks": []
 }
