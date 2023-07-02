@@ -1,5 +1,6 @@
 {
   "title": "Disneyland Paris 2023",
+  "image_folder_name": "disneyland-032023",
   "header": {
     "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
     "intro": "In March 2023, my sister and I embarked on a magical trip to Disneyland Paris. Join me as I share the highlights of our unforgettable journey, filled with joy, excitement, and cherished memories. Let's dive into the enchanting world of Disneyland Paris and the City of Lights together!",
@@ -10,90 +11,64 @@
   },
   "blocks": [
     {
-      "componentName": "BlockContentWithImage",
-      "props": {
-        "order": "normal",
-        "background": "light",
-        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
-        "image": {
-          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
-          "alt": "Together with my sister in front of the Disneyland castle"
-        }
-      }
-    },
-    {
-      "componentName": "BlockContentWithImage",
-      "props": {
-        "order": "reversed",
-        "background": "dark",
-        "title": "<span class=\"text-highlight\">Disneyland</span><br> Paris 2023",
-        "body": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor.",
-        "image": {
-          "url": "/images/trips/disneyland-032023/thumbnail.jpeg",
-          "alt": "Together with my sister in front of the Disneyland castle"
-        }
-      }
-    },
-    {
       "componentName": "BlockPhotoBook",
       "props": {
         "images": [
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_01.jpg",
-            "alt": "Eating a Mickey Mouse cookie with my sister"
+            "alt": "Alt text for image 2"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_02.jpg",
-            "alt": "In front of the Disney Hollywood Studios park"
+            "alt": "Alt text for image 3"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_03.jpg",
-            "alt": "At the entrance of the Avengers Campus"
+            "alt": "Alt text for image 4"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_04.jpg",
-            "alt": "In front of Buzz Lightyear in Toy Story Land"
+            "alt": "Alt text for image 5"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_05.jpg",
-            "alt": "In front of Buzz Lightyear in Toy Story Land"
+            "alt": "Alt text for image 6"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_06.jpg",
-            "alt": "Giving Mickey Mouse a handshake"
+            "alt": "Alt text for image 7"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_07.jpg",
-            "alt": "Making a fun picture with my sister and Mickey Mouse"
+            "alt": "Alt text for image 8"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_08.jpg",
-            "alt": "Second day in the Hollywood Studios park"
+            "alt": "Alt text for image 9"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_09.jpg",
-            "alt": "Saluting with captain America"
+            "alt": "Alt text for image 10"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_10.jpg",
-            "alt": "A hero stance together with my sister and black widow"
+            "alt": "Alt text for image 11"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_11.jpg",
-            "alt": "In front of the Disney Castle"
+            "alt": "Alt text for image 12"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_12.jpg",
-            "alt": "Leaving on the last day after the big firework show"
+            "alt": "Alt text for image 13"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_13.jpg",
-            "alt": "My sister taking a cool picture with stitch"
+            "alt": "Alt text for image 14"
           },
           {
             "url": "/images/trips/disneyland-032023/photo-book/disneyland_photo-book_14.jpg",
-            "alt": "All together with stitch and my sister"
+            "alt": "Alt text for image 15"
           }
         ]
       }

@@ -2,8 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
+    "generate-trips-json": "node addTripsToJSON.js",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "npm run generate-trips-json && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -19,7 +20,9 @@
     "sass": "^1.62.0"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "nuxt-swiper": "^1.1.0",
+    "path": "^0.12.7",
     "swiper": "^9.2.4"
   }
 }
